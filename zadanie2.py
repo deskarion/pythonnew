@@ -53,13 +53,6 @@ for i in my_dict.split(' '):
 
 nature_list = [7, 5, 3, 3, 2]
 new_symbol = int(input('Введите число рейтинга'))
-for i in nature_list:
-    if new_symbol is i:
-        nature_list.insert(i, new_symbol)
-        nature_list.sort(reverse=True)
-        break
-    else:
-        nature_list.append(new_symbol)
-        nature_list.sort(reverse=True)
-        break
+nature_list.append(new_symbol)
+nature_list.sort(reverse=True)
 print(nature_list)
